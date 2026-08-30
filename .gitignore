@@ -1,0 +1,23 @@
+# Segreti e variabili d'ambiente
+.env
+.env.*
+!.env.example
+
+# Dipendenze
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Build e output
+dist/
+build/
+*.log
+
+# File di sistema/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Claude Code - impostazioni locali/personali (non condivise)
+.claude/settings.local.json
