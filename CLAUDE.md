@@ -31,7 +31,14 @@ _Aggiungi qui le convenzioni di codice, naming, testing, ecc. specifiche del pro
 
 - Composio è collegato come **connector di claude.ai** (Settings → Connectors), non tramite un file `.mcp.json` nel repository: l'autenticazione è OAuth, legata all'account claude.ai dell'utente, e non è portabile via Git.
 - Ogni collaboratore che vuole usare gli strumenti Composio in una sessione Claude Code deve avere il connector "Composio" abilitato sul proprio account claude.ai — non c'è nulla da installare o configurare in questo repository per farlo funzionare.
-- Toolkit applicativo attualmente collegato tramite Composio: **Excel** (Microsoft Graph), account `gcrispino@hotmail.it`.
+- Toolkit applicativi attualmente collegati tramite Composio:
+  - **Excel** (Microsoft Graph) — account `gcrispino@hotmail.it`
+  - **GitHub** — account `Cenetto`
+  - **Gmail** — account `giacrispino@gmail.com`
+  - **Google Calendar** — account `giacrispino@gmail.com`
+  - **Google Docs** — account `giacrispino@gmail.com`
+  - **Google Sheets** — account `giacrispino@gmail.com`
+  - **Supabase**
 - Non committare mai token, API key o credenziali Composio nel repository: eventuali chiavi vanno in `.env` (già escluso da Git, vedi `.gitignore`).
 
 ## Comandi utili
