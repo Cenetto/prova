@@ -19,6 +19,12 @@ _Descrivi qui brevemente cosa fa il progetto, lo stack tecnologico principale e 
 
 _Aggiungi qui le convenzioni di codice, naming, testing, ecc. specifiche del progetto._
 
+### Creazione di nuove skill
+
+- La cartella `.claude/skills/skill-creator/` contiene la skill ufficiale Anthropic **Skill Creator**.
+- **Regola vincolante:** ogni volta che viene richiesto di creare, modificare o ottimizzare una skill custom, Claude DEVE invocare la skill `skill-creator` (tramite lo strumento Skill) invece di scrivere un `SKILL.md` a mano o improvvisare la struttura.
+- Questo garantisce che ogni skill del progetto segua lo stesso formato, le stesse convenzioni e (dove utile) passi per la fase di valutazione/eval prevista da `skill-creator`.
+
 ## Comandi utili
 
 _Aggiungi qui i comandi principali per build, test, lint, ecc._
