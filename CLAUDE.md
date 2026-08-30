@@ -25,6 +25,15 @@ _Aggiungi qui le convenzioni di codice, naming, testing, ecc. specifiche del pro
 - **Regola vincolante:** ogni volta che viene richiesto di creare, modificare o ottimizzare una skill custom, Claude DEVE invocare la skill `skill-creator` (tramite lo strumento Skill) invece di scrivere un `SKILL.md` a mano o improvvisare la struttura.
 - Questo garantisce che ogni skill del progetto segua lo stesso formato, le stesse convenzioni e (dove utile) passi per la fase di valutazione/eval prevista da `skill-creator`.
 
+## Integrazioni MCP
+
+### Composio
+
+- Composio è collegato come **connector di claude.ai** (Settings → Connectors), non tramite un file `.mcp.json` nel repository: l'autenticazione è OAuth, legata all'account claude.ai dell'utente, e non è portabile via Git.
+- Ogni collaboratore che vuole usare gli strumenti Composio in una sessione Claude Code deve avere il connector "Composio" abilitato sul proprio account claude.ai — non c'è nulla da installare o configurare in questo repository per farlo funzionare.
+- Toolkit applicativo attualmente collegato tramite Composio: **Excel** (Microsoft Graph), account `gcrispino@hotmail.it`.
+- Non committare mai token, API key o credenziali Composio nel repository: eventuali chiavi vanno in `.env` (già escluso da Git, vedi `.gitignore`).
+
 ## Comandi utili
 
 _Aggiungi qui i comandi principali per build, test, lint, ecc._
